@@ -17,5 +17,7 @@ export default class TimerComponent extends Component {
           <h1>Hola forma2 {this.props.nombre} son las {this.state.fecha.getHours()}:{this.state.fecha.getMinutes()}</h1>
       </div>
     );
+    
   }
+  
 }
