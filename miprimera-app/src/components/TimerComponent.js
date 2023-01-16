@@ -13,11 +13,8 @@ export default class TimerComponent extends Component {
   render() {
     return (
       <div>
-        <div>
           <h1>Hola forma1 {this.props.nombre} son las {this.state.hour}:{this.state.min}</h1>
           <h1>Hola forma2 {this.props.nombre} son las {this.state.fecha.getHours()}:{this.state.fecha.getMinutes()}</h1>
-        </div>
-        {/*Hacemos que el valor que aparezca inicialmente se el del atributo "name" del props del input */}
       </div>
     );
   }
