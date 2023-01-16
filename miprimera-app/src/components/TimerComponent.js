@@ -29,7 +29,7 @@ export default class TimerComponent extends Component {
     return (
       <div>
           <h1>Hola forma1 {this.props.nombre} son las {this.state.hour}:{this.state.min}</h1>
-          <h1>Hola forma2 {this.state.fecha.toLocaleTimeString()}</h1>
+          <h1>Hola forma2 {this.props.nombre} son las {this.state.fecha.toLocaleTimeString()}</h1>
       </div>
     );
     
