@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 export default class TimerComponent extends Component {
     constructor(){
+      //el super envia las props
         super()
         this.state={
           hour:new Date().getHours(),
