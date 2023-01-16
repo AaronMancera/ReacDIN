@@ -10,11 +10,26 @@ export default class TimerComponent extends Component {
           min:new Date().getMinutes()
         }
       }
+      componentDidMount() {
+        this.timerID = setInterval(
+          () => this.tick(),
+          1000
+        );
+      }
+      componentWillUnmount() {
+        clearInterval(this.timerID);
+      }
+    
+      tick() {
+        this.setState({
+          fecha: new Date()
+        });
+      }
   render() {
     return (
       <div>
           <h1>Hola forma1 {this.props.nombre} son las {this.state.hour}:{this.state.min}</h1>
-          <h1>Hola forma2 {this.props.nombre} son las {this.state.fecha.getHours()}:{this.state.fecha.getMinutes()}</h1>
+          <h1>Hola forma2 {this.state.fecha.toLocaleTimeString()}</h1>
       </div>
     );
     
