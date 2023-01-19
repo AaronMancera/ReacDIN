@@ -17,6 +17,7 @@ export default class ToggleComponent extends Component {
         return (
             <button onClick={this.handleClick}>
                 {this.state.isToggleOn ? 'ON' : 'OFF'}
-            </button>);
+            </button>
+            );
     }
 }
